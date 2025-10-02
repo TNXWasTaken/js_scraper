@@ -1,5 +1,5 @@
 alert("d")
 
-import axios from './node_modules/axios/lib/axios.js';
+import axios from './d.js';
 
 console.log(axios.isCancel('something'));
