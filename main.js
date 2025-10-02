@@ -1,7 +1,7 @@
 import axios from './node_modules/axios/dist/esm/axios.js';
 
 try {
-  const res = await axios.get('https://example.com');
+  const res = await axios.get('https://example.com/');
   console.log('Success! Data fetched:', res.data);
 } catch (error) {
   console.error('Error fetching data:', error.message);
