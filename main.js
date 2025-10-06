@@ -8,4 +8,5 @@ try {
   console.log('First 500 characters:', res.data.substring(0, 500));
 } catch (error) {
   console.error('Error fetching data:', error.message);
+  alert('Error fetching data:', error.message);
 }
