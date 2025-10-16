@@ -1,3 +1,5 @@
+import {Parser} from "acorn";
+
 const website = 'https://hackertyper.net/'
 
 // Using corsproxy.io - a reliable CORS proxy

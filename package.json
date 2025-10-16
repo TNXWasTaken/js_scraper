@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "acorn": "^8.15.0",
     "axios": "^1.12.2",
+    "browserify": "^17.0.1",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "http-server": "^14.1.1"
