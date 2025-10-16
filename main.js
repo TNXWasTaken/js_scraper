@@ -1,4 +1,4 @@
-import {Parser} from "acorn";
+import {Parser} from "./node_modules/acorn/dist/acorn.js";
 
 const website = 'https://hackertyper.net/'
 
