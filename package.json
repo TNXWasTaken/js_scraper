@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "acorn": "^8.15.0",
+    "@xmldom/xmldom": "^0.8.11",
     "axios": "^1.12.2",
     "browserify": "^17.0.1",
     "cors": "^2.8.5",

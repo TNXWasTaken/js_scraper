@@ -1,11 +1,15 @@
-import {Parser} from "./node_modules/acorn/dist/acorn.js";
+//import * as acorn from "./node_modules/acorn/dist/acorn.js";
+//import * as markup2json from "./node_modules/markup2json/dist/index.js";
 
-const website = 'https://hackertyper.net/'
+const website = 'https://hackertyper.net'
 
 // Using corsproxy.io - a reliable CORS proxy
 const res = await fetch('https://corsproxy.io/?'.concat(website));
 const data = await res.text();
-console.log('Successfully fetched example.com!');
+const parser = new DOMParser();
+const htmlParsed = parser.parseFromString(data, 'text/html');
+console.log(htmlParsed.getElementsByClassName("Script").item)
+console.log('Successfully fetched '.concat(website));
 console.log('HTML length:', data.length, 'characters');
 console.log('First 500 characters:', data.substring(0, 500));
 
