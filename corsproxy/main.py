@@ -8,6 +8,8 @@ def proxy():
     url = request.args.get("url")
     if not url:
         return "Missing ?url=", 400
+    
+    print(url)
 
     # Forward request to the target URL
     try:

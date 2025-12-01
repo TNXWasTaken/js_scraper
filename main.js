@@ -21,8 +21,7 @@ function extractPaths(document) {
 }
 
 // Using corsproxy.io - a reliable CORS proxy
-const res = await fetch('127.0.0.1:3000/proxy?url=' + encodeURIComponent(website))  .then(r => r.text())
-  .then(console.log);
+const res = await fetch('http://127.0.0.1:3000/proxy?url=' + encodeURIComponent(website));
 const data = await res.text();
 const parser = new DOMParser();
 const htmlParsed = parser.parseFromString(data, 'text/html');
