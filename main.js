@@ -20,12 +20,13 @@ function extractPaths(document) {
   return paths;
 }
 
-// Using corsproxy.io - a reliable CORS proxy
-const res = await fetch('http://127.0.0.1:3000/proxy?url=' + encodeURIComponent(website));
+// Using a custom made proxy
+const res = await fetch('https://upgraded-train-q77x64pwgxvfxvg4-3000.app.github.dev/proxy?url=' + encodeURIComponent(website));
 const data = await res.text();
 const parser = new DOMParser();
 const htmlParsed = parser.parseFromString(data, 'text/html');
-console.log(extractPaths(htmlParsed))
+alert(data)
+alert(extractPaths(htmlParsed))
 console.log('Successfully fetched '.concat(website));
 console.log('HTML length:', data.length, 'characters');
 console.log('First 500 characters:', data.substring(0, 500));
